@@ -1,0 +1,61 @@
+@media (max-width: 1200px)
+    body
+        background-size: auto
+        padding: 30px 0 0 0
+
+@media (max-width: 992px)
+    .container
+        width: 98%
+    
+    .main
+        padding: 40px 0
+
+    .series
+        padding-bottom: 60px
+
+@media (max-width: 868px)
+    body
+        background-position: right 75% top
+
+    .main
+        &-play
+            display: none
+
+@media (max-width: 768px)
+    body
+        background-position: right 65% top
+
+@media (max-width: 550px)
+    .footer
+        &-wrapper
+            flex-direction: column
+        &__copyright
+            margin-bottom: 10px
+
+@media (max-width: 525px)
+    body
+        background-position: right 35% top
+
+@media (min-width: 320px) and (max-width: 480px)
+    .container  
+        width: 92%
+    .menu
+        &__button
+            display: flex
+            
+    .header
+        &__menu
+            display: none
+        &__social
+            display: none
+        &-wrapper
+            justify-content: flex-end
+        
+    .swiper
+        &_button
+            &__next
+                display: none
+
+    .main
+        &-content
+            width: 100%
