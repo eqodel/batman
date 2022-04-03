@@ -13,6 +13,11 @@
     .series
         padding-bottom: 60px
 
+    .header
+        &__menu
+            padding-right: 0
+
+
 @media (max-width: 868px)
     body
         background-position: right 75% top
@@ -25,12 +30,14 @@
     body
         background-position: right 65% top
 
+
 @media (max-width: 550px)
     .footer
         &-wrapper
             flex-direction: column
         &__copyright
             margin-bottom: 10px
+
 
 @media (max-width: 525px)
     body
@@ -43,13 +50,51 @@
         &__button
             display: flex
             
+        &__close
+            &--mobile
+                display: block
+                cursor: pointer
+            
     .header
         &__menu
             display: none
+            &--mobile
+                display: flex
+                flex-direction: column
+                order: 3
+            &__link:not(:last-child)
+                margin-bottom: 10px
+        &__logo
+            display: none
+            &--mobile
+                display: block
+                order: 1
+                padding-right: 20px
         &__social
             display: none
+            &--mobile
+                display: flex
+                order: 2
+                margin-bottom: 10px
         &-wrapper
-            justify-content: flex-end
+            display: none
+            &--mobile
+                display: flex
+                position: absolute
+                width: 250px
+                right: 0
+                top: 0px
+                background: #151515
+                flex-direction: column
+                align-items: center
+                justify-content: space-evenly
+                padding: 50px 0 
+        &__mobile-wrapper
+            display: flex
+            flex-direction: row-reverse
+            align-items: center
+            margin-bottom: 35px
+            margin-left: 40px
         
     .swiper
         &_button
@@ -59,3 +104,4 @@
     .main
         &-content
             width: 100%
+
