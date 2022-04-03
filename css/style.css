@@ -159,6 +159,7 @@ body {
 }
 
 .swiper-wrapper {
+  width: 100%;
   position: relative;
 }
 
@@ -368,6 +369,9 @@ body {
     display: none;
   }
   .main-content {
+    width: 100%;
+  }
+  .series-wrapper {
     width: 100%;
   }
 }
